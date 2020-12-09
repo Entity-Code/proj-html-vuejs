@@ -151,9 +151,16 @@
       height: 400px;
    }
 /* partners */
+#divisorio{
+   border-top: 0.5px solid #E9ECEF;
+   width: 100%;
+   height: 1px;
+}
 .cont-partners{
-   border-top: 1px solid black;
-   min-height: 100px;
+   width: 65%;
+   margin: 0 auto;
+   margin-top: 25px;
+   min-height: 50px;
    display: flex;
    flex-flow: nowrap row;
    justify-content: space-around;
@@ -170,20 +177,38 @@
    }
    .cont-partners > a > img{height: 27.5px;}
 
+/* concavo */
+.div {
+  position: relative;
+  bottom: 50px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #f8f9fc;
+  z-index: -1;
+}
+
+.div-inner {
+  position: relative;
+  background-color: #ffffff;
+  height: 90px;
+}
+
+.div-inner:before,
+.div-inner:after {
+  box-shadow: 0 0px 0 80px #f8f9fc;
+  border-radius: 100%;
+  position: absolute;
+  height: 70px;
+  content: '';
+  right: -20%;
+  left: -20%;
+  bottom: 100%;
+}
+
+
 /* main header */
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* BLOCCO 1 */
 
 
 
@@ -196,6 +221,21 @@
 
 
 /* BLOCCO 2 */
+
+
+
+
+
+/* BLOCCO 2 */
+
+
+
+
+
+
+
+
+
 
 
 
