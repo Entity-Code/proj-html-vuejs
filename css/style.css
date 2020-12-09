@@ -40,7 +40,6 @@
       display: flex;
       flex-flow: row;
       justify-content: space-between;
-      border: 1px solid black;
       height: 50px;
    }
       /* left */
@@ -122,7 +121,6 @@
       width: 60%;
       display: flex;
       flex-flow: nowrap column;
-      border: 1px solid black;
    }
 
       .get-started > div{ margin-bottom: 12.5px;}
