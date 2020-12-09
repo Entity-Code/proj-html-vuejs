@@ -5,6 +5,7 @@
    box-sizing: border-box;
    font-family: 'Lato';
    list-style-type: none;
+   text-decoration: none;
 }
 
 /* colors background */
@@ -17,7 +18,7 @@
    width:65%;
    margin: 0 auto;
    /* debug */
-   height: 500px;
+   min-height: 500px;
    border: 1px solid black;
    /* debug */
 }
@@ -26,7 +27,7 @@
 
 /* BLOCCO 1 */
 #blocco-1{
-   height: 600px;
+   min-height: 600px;
 }
    /* nav */
    nav{
@@ -88,8 +89,88 @@
       #nav-right > li:nth-child(3){
          padding: 6.5px 10px;
       }
+/* nav */
+
+/* main header */
+.cont-main-header{
+   height: 60%;
+   margin: 70px 0;
+   display: flex;
+}
+   /* get started */
+   .get-started{
+      margin-right: 25px;
+      margin-top: 50px;
+      width: 60%;
+      display: flex;
+      flex-flow: nowrap column;
+      border: 1px solid black;
+   }
+
+      .get-started > div{ margin-bottom: 12.5px;}
+         .get-started > div > span{
+            font-weight: 600;
+            font-size: 11px;
+            border: 1px solid #d3d3d3;
+            border-radius: 10px;
+            padding: 2.5px 7px;
+            background-color: #2F55D41A;
+            color: #2F55D4;
+         }
+      .get-started > h1{
+         line-height: 1.5em;
+         margin-bottom: 12.5px;
+      }
+      .get-started > p{
+         color: #8492A6;
+         font-weight: 500;
+         margin-bottom: 40px;
+      }
+
+      .get-started #b1-btns{margin-bottom: 25px;}
+         .get-started a{
+            padding: 8px 15px;
+            color: #f8f9fc;
+            font-weight: bold;
+            background-color: #2f55d4;
+            border: 1px solid #2f55d4;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px 1px rgba(173,181,189,1);
+            margin-right: 8px;
+            transition: 0.15s;
+         }
+         .get-started a:hover{
+            box-shadow: 0 0 0 0;
+            background-color: #f8f9fc;
+            color: #2f55d4;
+            border: 1px solid #2f55d4;
+         }
 
 
+   .jumbotron{
+      height: 400px;
+   }
+/* partners */
+.cont-partners{
+   border-top: 1px solid black;
+   min-height: 100px;
+   display: flex;
+   flex-flow: nowrap row;
+   justify-content: space-around;
+}
+
+   .cont-partners > a{
+      padding: 10px;
+      border-radius: 10px;
+      align-self: center;
+      transition: 0.25s;
+   }
+   .cont-partners > a:hover{
+      box-shadow: 0px 9px 24px 23px rgba(255,255,255,1);
+   }
+   .cont-partners > a > img{height: 27.5px;}
+
+/* main header */
 
 
 
