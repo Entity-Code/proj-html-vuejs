@@ -1,0 +1,70 @@
+/* regole generali */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Lato';
+   list-style-type: none;
+}
+/* .p{position:absolute; height: 500px; width: 100%; z-index: -99;} */
+.gray{background-color:#f8f9fc;}
+.white{background-color:#ffffff;}
+.darkblue{background-color:#27314F;}
+
+/* blocchi */
+/* #app{margin: 0 auto; width:65%;} */
+
+.blocchi{
+   height: 500px;
+   border: 1px solid black;
+   margin: 0 auto;
+   width:65%;
+}
+
+
+/* BLOCCO 1 */
+
+#blocco-1{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BLOCCO 2 */
+
+
+
+
+
+/* BLOCCO 3 */
+
+
+
+
+
+/* BLOCCO 4 */
+
+
+
+
+
+/* BLOCCO 5 */
