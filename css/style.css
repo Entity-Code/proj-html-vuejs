@@ -596,7 +596,7 @@
       font-size: 16.5px;
    }
    .cont-top-footer li{
-      padding: 8px;
+      padding: 5px;
    }
       .fot-box{margin: 0 10px;}
       .fot-box:first-child{margin-left: 0;}
@@ -617,6 +617,7 @@
             /* social */
             .fot-social > a > i{
                padding: 5px 7.5px;
+               margin: 0 2px;
                border: 1px solid #ADB5BD;
                border-radius: 5px;
                color: #ADB5BD;
