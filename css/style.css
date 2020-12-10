@@ -18,6 +18,7 @@
    /*riga 326 */
    .selected{background-color: #3C4858;}
    .text-left{text-align: left;}
+   .text-center{text-align: center;}
 
 /* blocchi */
 .blocchi{
@@ -25,7 +26,7 @@
    margin: 0 auto;
    /* debug */
    min-height: 100px;
-   /* border: 1px solid black; */
+   border: 1px solid black;
    /* debug */
 }
 
@@ -134,6 +135,7 @@
             color: #2F55D4;
          }
       .get-started > h1{
+         color: #161C2D;
          line-height: 1.5em;
          margin-bottom: 12.5px;
       }
@@ -189,7 +191,8 @@
       transition: 0.25s;
    }
    .cont-partners > a:hover{
-      box-shadow: 0px 7px 15px 15px rgba(255,255,255,1);
+      box-shadow: 0px 7px 15px 3px rgba(255,255,255,1);
+      transform: scale(1.1);
    }
    .cont-partners > a > img{height: 27.5px;}
 
@@ -340,26 +343,58 @@
    .check{margin-top: 18px;}
       .check > span{
          color: #8492A6;
-         margin-right: 20px;
+         margin-right: 40px;
          font-weight: bold;
       }
          .check > span > i{
             color: #2ECA8B;
             padding-right: 5px;
          }
-
-
-
 /* BLOCCO 2 */
 
 
 
 
 
-/* BLOCCO 2 */
 
 
 
+
+/* BLOCCO 3 */
+/* // (vedi blocco 1) */
+#blocco-3{
+   width: 72.5%;
+}
+   #blocco-3 .p1{
+      font-size: 15px;
+      margin-bottom: 16px;
+      font-weight: bold;
+   }
+   #blocco-3 .p2{
+      line-height: 1.85em;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 30px;
+   }
+      #blocco-3 p > i{
+         color: #2f55d4;
+         margin-right: 10px;
+      }
+      #b1-btns > a > i{
+         font-size: 12.5px;
+         font-weight: lighter;
+         padding-left: 5px;
+      }
+
+      #blocco-3 > #rates > h1 {
+         color: #000;
+         margin: 19px;
+      }
+      #blocco-3 > #rates > p{color: #8492A6;}
+         #blocco-3 > #rates > p > a{
+            color: #2f55d4;
+            font-weight: bold;
+         }
 
 
 
@@ -377,10 +412,15 @@
 
 
 
+
+
+
+/* BLOCCO 4 */
 /* BLOCCO 4 */
 
 
 
 
 
+/* BLOCCO 5 */
 /* BLOCCO 5 */
