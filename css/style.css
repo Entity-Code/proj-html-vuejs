@@ -22,17 +22,12 @@
 
 /* blocchi */
 .blocchi{
-   width:70%;
+   width: 70%;
    margin: 0 auto;
-   /* debug */
-   min-height: 100px;
-   border: 1px solid black;
-   /* debug */
 }
 
 
-
-/* BLOCCO 1 */
+/* BLOCCO 1 (HEADER)*/
 #blocco-1{
    min-height: 600px;
 }
@@ -174,7 +169,6 @@
             border: 1px solid #2f55d4;
          }
 
-
    .jumbotron{
       height: 400px;
    }
@@ -233,9 +227,9 @@
   left: -20%;
   bottom: 100%;
 }
-
-
 /* main header */
+/* BLOCCO 1 (HEADER) */
+
 
 /* BLOCCO 2 (1/2) */
 #blocco-2-1{margin-bottom: 75px;}
@@ -257,6 +251,7 @@
    justify-content: space-between;
 }
    .box{
+      position: relative;
       width: calc(100% / 4);
       margin: 0 10px;
       padding: 15px;
@@ -264,6 +259,8 @@
       border-radius: 5px;
       box-shadow: 0px 1px 2.5px 0.5px rgba(173,181,189,0.4);
    }
+   .box:hover{bottom: 10px;}
+
    .box:first-child{margin-left: 0;}
    .box:last-child{margin-right: 0;}
 
@@ -274,6 +271,7 @@
       background-color: #2F55D41A;
       border-radius: 5px;
       margin-bottom: 21px;
+      color: #2f55d4;
    }
    .box > h2{
       font-size: 16.5px;
@@ -287,6 +285,7 @@
    }
    .box > a{color: #2f55d4; margin-bottom: 10px;}
    .box > a:hover{text-decoration: underline;}
+
 
 /* BLOCCO 2 (2/2) */
 #blocco-2-2{
@@ -366,13 +365,6 @@
 /* BLOCCO 2 */
 
 
-
-
-
-
-
-
-
 /* BLOCCO 3 */
 #blocco-3{
    width: 75%;
@@ -403,7 +395,6 @@
          padding-left: 5px;
       }
 
-
       #blocco-3 > .rates > h1,
       #blocco-4 .rates > h1 {
          color: #000;
@@ -418,11 +409,6 @@
             font-weight: bold;
          }
 /* BLOCCO 3 */
-
-
-
-
-
 
 
 
@@ -441,10 +427,52 @@
    #cont-big-boxes > .big-box:first-child{
       margin-left: 0;
    }
+
+   /* label */
+   #label{
+      position: relative;
+      width: 120px;
+      height: 25px;
+      background: rgb(241,116,37);
+      background: radial-gradient(circle, rgba(241,116,37,1) 0%, rgba(230,107,30,1) 50%);
+      color: #f8f9fc;
+      font-weight: 500;
+      position: absolute;
+      top: 20px;
+      right: -26.5px;
+      text-align: center;
+      border-bottom-left-radius: 20%;
+      border-top-left-radius: 500px;
+      border-bottom-right-radius: 20%;
+      border-top-right-radius: 500px;
+      transform: rotate(45deg);
+   }
+   #one{
+      width: 40px;
+      height: 20px;
+      background-color: #ffffff;
+      position: absolute;
+      top: -10px;
+      left: -15px;
+      transform: rotate(135deg);
+   }
+   #two{
+      width: 40px;
+      height: 20px;
+      background-color: #ffffff;
+      position: absolute;
+      top: -10px;
+      right: -17px;
+      transform: rotate(-135deg);
+   }
+   /* label */
+
+
    #cont-big-boxes > .big-box:last-child{
       margin-right: 0;
    }
       #blocco-4 .big-box{
+         position: relative;
          min-height: 300px;
          width: calc(100% / 3);
          margin: 0 10px;
@@ -498,7 +526,7 @@
             text-align: center;
             transition: 0.25s;
          }
-         
+
          #blocco-4 .big-box > span:last-child{
             color: #8492A6;
             font-size: 14px;
@@ -535,42 +563,165 @@
          border-radius: 20px;
          align-self: center;
          position: absolute;
-         top: 4.5px;
+         top: 4px;
          right: -4px;
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* BLOCCO 4 */
 
 
+/* BLOCCO 5 (FOOTER)*/
+/* top */
+#blocco-5, #blocco-5 a{
+   width: 75%;
+   color: #ADB5BD;
+   transition: 0.25s;
+}
+   #blocco-5 a:hover{
+      color: #f8f9fc;
+   }
+   #blocco-5 p, #blocco-5 li{
+      font-size: 14px;
+      line-height: 1.5em;
+   }
+   .cont-top-footer{
+      display: flex;
+      flex-flow: nowrap row;
+      justify-content: space-between;
+      margin: 60px 0;
+   }
+   .cont-top-footer h1{
+      color: #f8f9fc;
+      font-size: 16.5px;
+   }
+   .cont-top-footer li{
+      padding: 8px;
+   }
+      .fot-box{margin: 0 10px;}
+      .fot-box:first-child{margin-left: 0;}
+      .fot-box:last-child{margin-right: 0;}
+         /* 1 */
+         .fot-box:first-child,
+         .fot-box:last-child{ /*4*/
+            width: 30%;
+         }
+         .fot-box p, .fot-box > ul{
+            padding: 25px 0;
+         }
+            /* light logo */
+            .fot-box:first-child > img{
+               width: 110px;
+               height: 20px;
+            }
+            /* social */
+            .fot-social > a > i{
+               padding: 5px 7.5px;
+               border: 1px solid #ADB5BD;
+               border-radius: 5px;
+               color: #ADB5BD;
+               transition: 0.25s;
+            }
+            .fot-social > a > i:hover{
+               background-color: #f8f9fc;
+               color: #27314f;
+               border: 1px solid #27314f;
+            }
+      /* freccette */
+      .fot-box ul i{
+         font-size: 9px;
+         margin-right: 8px;
+      }
 
+      /* email2 Newsletter input */
+      #email2 > input,
+      #email2 > button{display: block;}
 
+      #email2 > h2{
+         font-size: 14px;
+         font-weight: bolder;
+      }
+      #email2 > h2 > span{
+         color: #E43F52;
+      }
 
+      /* input */
+      #cont-email2{
+         height: 45px;
+         width: 100%;
+         margin: 15px 0;
+         padding: 10px 8px;
+         background-color: #313d63;
+         border: none;
+         border-radius: 5px;
+         display: flex;
+         justify-content: center;
+      }
 
+         #cont-email2 > span{
+            width: 40%;
+            align-self: center;
+            font-size: 13px;
+            margin-right: 5px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+         }
+            #cont-email2 > span > i{
+               align-self: center;
+            }
+         #cont-email2 > input{
+            width: 55%;
+            height: 30px;
+            align-self: center;
+            font-size: 15px;
+            background-color: #313d63;
+            border: none;
+            color: #ADB5BD;
+         }
 
+      /* button */
+      #email2 > button{
+         position: relative;
+         width: 100%;
+         height: 42.5px;
+         margin: 15px 0;
+         padding: 10px 8px;
+         background-color: #313d63;
+         border: none;
+         border-radius: 5px;
+         color: #2f55d4;
+         font-size: 18px;
+         font-weight: bolder;
+         box-shadow: 0px 2px 5px 1px rgba(47, 85, 212, 0.6);
+         cursor: pointer;
+         transition: 0.25s;
+      }
+      #email2 > button:hover{box-shadow: 0px 5px 15px 10px rgba(47, 85, 212, 0.6);}
+      #email2> button:active{top: 2px;}
 
+      /* bot */
+      .cont-bot-footer{
+         height: 100px;
+         width: 100%;
+         background-color: #27314f;
+         border-top: 0.5px solid #313d63;
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: space-around;
+         padding: 30px 0;
+      }
+      .cont-bot-footer > p{
+         font-size: 15px;
+         color: #ADB5BD;
+      }
+      .cont-bot-footer > p > span{
+         color: #E43F52;
+         font-size: 20px;
+      }
 
-
-/* BLOCCO 5 */
-/* BLOCCO 5 */
+      .cont-bot-footer ul{display: flex;}
+      .cont-bot-footer ul img{
+         width: calc(57px - 15px);
+         height: calc(39px - 10px);
+         padding: 2.5px;
+      }
+/* BLOCCO 5 (FOOTER)*/
