@@ -316,13 +316,16 @@
          justify-content: space-around;
       }
          #install > span{
+            align-self: center;
             color: #f8f9fc;
             height: 50%;
-            padding: 7px 51px;
-            margin: 1px 0;
+            border: 1px solid #4e5a68;
+            width: 100%;
+            height: 34px;
             transition: 0.25s;
             border-radius: 5px;
             cursor: pointer;
+            padding-top: 4px;
          }
 
          #install > span:hover{
