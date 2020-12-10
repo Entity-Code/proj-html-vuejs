@@ -571,6 +571,7 @@
 
 /* BLOCCO 5 (FOOTER)*/
 /* top */
+
 #blocco-5, #blocco-5 a{
    width: 75%;
    color: #ADB5BD;
@@ -588,6 +589,7 @@
       flex-flow: nowrap row;
       justify-content: space-between;
       margin: 60px 0;
+      padding-top: 60px;
    }
    .cont-top-footer h1{
       color: #f8f9fc;
