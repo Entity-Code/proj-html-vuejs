@@ -1,6 +1,22 @@
 var app = new Vue({
    el: "#app",
    data: {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       // FOOTER
       footer:{
          // top
@@ -53,7 +69,6 @@ var app = new Vue({
             "img/paypal.png",
             "img/visa.png"
          ]
-
       }
 
 
