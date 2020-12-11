@@ -41,7 +41,7 @@
 
                      <!-- dropdown -->
                      <li class="drop-down" v-for="section in header.sections" v-if="section.dropdown == true">
-                        {{section.name}}
+                        <button>{{section.name}}</button>
                         <i :class="bottomArrow"></i>
                         <div class="sub-menu">
                            <ul>
@@ -179,10 +179,10 @@
                <!-- npm nuget spm github -->
                <div id="cont-install">
                   <div id="install">
-                     <span class="selected">npm</span>
-                     <span>nuget</span>
-                     <span>spm</span>
-                     <span>github</span>
+                     <button class="selected">npm</button>
+                     <button>nuget</button>
+                     <button>spm</button>
+                     <button>github</button>
                   </div>
 
                   <p>

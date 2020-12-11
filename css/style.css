@@ -15,8 +15,6 @@
 
 
 /* vari */
-   /*riga 326 */
-   .selected{background-color: #3C4858;}
    .text-left{text-align: left;}
    .text-center{text-align: center;}
 
@@ -50,28 +48,29 @@
          display: flex;
          align-self: center;
       }
-      #nav-center > li, #nav-center > li:first-child > a{
+      #nav-center > li > button, #nav-center > li:first-child > a{
          padding: 10px 0;
-         margin: 0 15px;
+         margin: -5px 25px;
+         margin-right: 1.5px;
          font-size: 12px;
          cursor: pointer;
          color: #3C4858;
          font-weight: 550;
-         transition: 0.10s;
          font-family: 'Josefin Sans', sans-serif;
       }
-      #nav-center > li:hover,
+      #nav-center > li > button:hover,
       #nav-center > li i:hover,
       #nav-center > li:first-child > a:hover{
          color: #2F55D4;
       }
 
-      #nav-center > li i{color: #3C4858;}
+      #nav-center > li i{
+         color: #3C4858;
+         font-size: 10px;
+      }
 
       /* dropdown */
-      .drop-down{
-         position: relative;
-      }
+      .drop-down{position: relative;}
 
       .drop-down > .sub-menu{
          border: 1px solid #E9ECEF;
@@ -84,18 +83,28 @@
          right: -10px;
          font-size: 12px;
          font-weight: normal;
-         padding: 10px 0;
+         padding-top: 10px;
          transition: 0.25s;
          pointer-events: all;
-         display: none;
+         visibility: hidden;
       }
-
+      .drop-down > button{
+         background: transparent;
+         outline: none;
+         border: none;
+         cursor: pointer;
+         font-size: 12px;
+         font-weight: normal;
+      }
       .drop-down > .sub-menu ul li{
          padding: 10px 5px;
          border-bottom: 1px solid #E9ECEF;
-         transition: 0.05s;
+         transition: 0.25s;
       }
-      .drop-down > .sub-menu ul li a:hover{
+      .drop-down > .sub-menu ul li:hover{
+         background-color: #ddecff;
+      }
+      .drop-down > .sub-menu ul li:hover a{
          color: #3C4858;
          border-bottom: 1px solid #3C4858;
       }
@@ -106,8 +115,9 @@
       .drop-down > .sub-menu ul li a{color: #3C4858;}
 
       /* visibilità */
-      #nav-center .drop-down:hover .sub-menu{
-         display: block;
+      #nav-center .drop-down:focus-within .sub-menu{
+         opacity: 1;
+         visibility: visible;
          position: absolute;
          margin-top: 15px;
       }
@@ -341,7 +351,7 @@
    margin: 0 auto;
    width: 50%;
 }
-   #blocco-2-2 > span{
+   #blocco-2-2 > span, #blocco-2-2 button{
       color: #2f55d4;
       font-weight: bold;
    }
@@ -371,7 +381,9 @@
          flex-flow: row nowrap;
          justify-content: space-around;
       }
-         #install > span{
+      .selected{background-color: #3C4858;}
+         #install > button{
+            background-color: #4e5a68;
             align-self: center;
             color: #f8f9fc;
             height: 50%;
@@ -381,12 +393,21 @@
             transition: 0.25s;
             border-radius: 5px;
             cursor: pointer;
-            padding-top: 4px;
+            font-size: 16px;
          }
-
-         #install > span:hover{
+         #install > button:first-child{
             background-color: #3C4858;
          }
+
+         #install > button:hover,
+         #install > button:focus,
+         .selected{
+            background-color: #3C4858;
+         }
+
+
+
+
 
    #cont-install > p {
       margin: 15px 0;
