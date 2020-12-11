@@ -1,8 +1,10 @@
 var app = new Vue({
    el: "#app",
    data: {
+      // centralizzazione icone freccette
       rightArrow: "fas fa-chevron-right",
       bottomArrow: "fas fa-chevron-down",
+
       // HEADER
       header:{
          //logo (left)
@@ -21,7 +23,7 @@ var app = new Vue({
                   "FAQ",
                   "TEAM"
                ]
-            }, 
+            },
             {
                dropdown: true,
                name: "PAGES",
@@ -105,16 +107,5 @@ var app = new Vue({
             "img/visa.png"
          ]
       }
-
-
-
    }
-   // mounted: function() {
-   //
-   // }
-
-   // methods: {
-   //
-   // }
-
 });
