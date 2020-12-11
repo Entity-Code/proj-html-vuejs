@@ -1,26 +1,61 @@
 var app = new Vue({
    el: "#app",
    data: {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      rightArrow: "fas fa-chevron-right",
+      bottomArrow: "fas fa-chevron-down",
+      // HEADER
+      header:{
+         //logo (left)
+         logo: "img/logo-dark.png",
+         // sections (center)
+         sections:[
+            {
+               dropdown: false,
+               name: "HOME",
+            },
+            {
+               dropdown: true,
+               name: "LANDING",
+               subSections: [
+                  "SUPPORT",
+                  "FAQ",
+                  "TEAM"
+               ]
+            },
+            {
+               dropdown: true,
+               name: "PAGES",
+               subSections: [
+                  "NEWS",
+                  "APP",
+                  "ABOUT",
+                  "LOG-IN"
+               ]
+            },
+            {
+               dropdown: true,
+               name: "DOCS",
+               subSections: [
+                  "DEMO",
+                  "STARTUP",
+                  "CEO",
+                  "POLICY"
+               ]
+            },
+         ],
+         // search/contacts (right)
+         contacts:[
+            "fas fa-search",
+            "fab fa-github",
+            "fab fa-stack-overflow",
+            "far fa-user"
+         ]
+      },
 
       // FOOTER
       footer:{
          // top
-         rightArrow: "fas fa-chevron-right",
+
          //Landrick 1
          title1: "img/logo-light.png", //logo
          p1: "Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.",
