@@ -21,7 +21,7 @@ var app = new Vue({
                   "FAQ",
                   "TEAM"
                ]
-            },
+            }, 
             {
                dropdown: true,
                name: "PAGES",
